@@ -1,9 +1,11 @@
 import { Routes } from '@angular/router';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy';
 
 export const routes: Routes = [
   { path: '', loadComponent: () => import('./pages/home/home').then((m) => m.Home) },
   { path: 'shop', loadComponent: () => import('./pages/shop/shop').then((m) => m.Shop) },
   { path: 'cart', loadComponent: () => import('./pages/cart/cart').then((m) => m.Cart) },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent},
   { path: 'about', loadComponent: () => import('./pages/about/about').then((m) => m.About) },
   {
     path: 'product',
